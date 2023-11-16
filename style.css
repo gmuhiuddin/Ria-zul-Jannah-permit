@@ -1,13 +1,20 @@
-*{
+@font-face {
+    font-family: poppins-medium;
+    src: url(Poppins-Medium.ttf);
+}
+
+* {
+    font-family: poppins-medium;
     margin: 0px;
     padding: 0px;
 }
-.container{
+
+.container {
     display: flex;
     justify-content: center;
 }
 
-hr{
+hr {
     margin: 0 auto;
     height: 3px;
     width: 79px;
@@ -16,66 +23,94 @@ hr{
     border-radius: 12px;
     cursor: pointer;
 }
-#barcode{
-    margin: 19px 109px;
+
+#barcode {
+    margin: 15px 129px;
     height: 149px;
     width: 159px;
+    border: 5px solid rgb(203, 151, 77);
 }
-#name{
+
+#name {
     margin: 31px 0px;
-text-align: center;
+    text-align: center;
 }
-#txt{   
+
+#txt {
     text-align: center;
     color: rgb(203, 151, 77);
 }
-#issued-by-txt{
+
+#issued-by-txt {
     margin-left: 41px;
     font-size: 19px;
 }
-#man-icon{
+
+#man-icon {
     height: 37px;
     width: 39px;
     margin-bottom: 17px;
 }
-#Name-img-txt{
+
+#Name-img-txt {
     display: flex;
     align-items: center;
 }
-#allowe-to-masjid-txt{
+
+#allowe-to-masjid-txt {
     margin-left: 12px;
 }
-#day-txt{
+
+#day-txt {
     margin-left: 41px;
     font-size: 17px;
 }
-#date-img-txt{
+
+#date-img-txt {
     display: flex;
     align-items: center;
 }
-#date-icon{
+
+#date-icon {
     font-size: 31px;
     margin-bottom: 9px;
     margin-right: 11px;
     color: rgb(203, 151, 77);
 }
-.day-date-container{
+
+.day-date-container {
     display: flex;
 }
-.time-container{
+
+.time-container {
     margin-left: 49px;
 }
-#time-txt{
+
+#time-txt {
     margin-left: 41px;
     font-size: 17px;
 }
-#time-icon{
+
+#time-icon {
     font-size: 31px;
     margin-bottom: 9px;
     margin-right: 11px;
     color: rgb(203, 151, 77);
 }
-#time-img-txt{
+
+#time-img-txt {
     display: flex;
     align-items: center;
+}
+
+#islamic-date-txt {
+    margin-top: 17px;
+    margin-left: 35px;
+}
+
+#exit-btn {
+    color: rgb(203, 151, 77);
+    font-size: 19px;
+    cursor: pointer;
+    margin-left: 349px;
 }
