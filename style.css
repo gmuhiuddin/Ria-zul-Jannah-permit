@@ -13,9 +13,7 @@
     display: flex;
     justify-content: center;
 }
-.permit-container{
-    background-color: aqua;
-}
+
 hr {
     margin: 0 auto;
     height: 3px;
@@ -43,7 +41,7 @@ hr {
     color: rgb(203, 151, 77);
 }
 
-#permit-details-txt{
+#permit-details-txt {
     margin-left: 33px;
 }
 
