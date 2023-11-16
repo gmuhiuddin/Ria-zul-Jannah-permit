@@ -1,10 +1,10 @@
 @font-face {
-    font-family: poppins-medium;
+    font-family: poppins;
     src: url(Poppins-Medium.ttf);
 }
 
 * {
-    font-family: poppins-medium;
+    font-family: poppins;
     margin: 0px;
     padding: 0px;
 }
