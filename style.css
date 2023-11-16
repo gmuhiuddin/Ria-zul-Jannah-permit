@@ -25,7 +25,7 @@ hr {
 }
 
 #barcode {
-    margin: 15px 129px;
+    margin: 15px 119px;
     height: 149px;
     width: 159px;
     border: 5px solid rgb(203, 151, 77);
@@ -42,19 +42,19 @@ hr {
 }
 
 #permit-details-txt {
-    margin-left: 33px;
+    margin-left: 43px;
 }
 
 #issued-by-txt {
-    margin-left: 59px;
+    margin-left: 65px;
     font-size: 19px;
 }
 
 #man-icon {
     height: 37px;
     width: 39px;
-    margin-bottom: 15px;
-    margin-left: 27px;
+    margin-bottom: 13px;
+    margin-left: 33px;
 }
 
 #Name-img-txt {
@@ -63,7 +63,7 @@ hr {
 }
 
 #allowe-to-masjid-txt {
-    margin-left: 31px;
+    margin-left: 37px;
 }
 
 #day-txt {
@@ -80,7 +80,7 @@ hr {
     font-size: 31px;
     margin-bottom: 9px;
     margin-right: 11px;
-    margin-left: 29px;
+    margin-left: 37px;
     color: rgb(203, 151, 77);
 }
 
