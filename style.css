@@ -13,13 +13,14 @@
     display: flex;
     justify-content: center;
 }
-
+.permit-container{
+    padding: 39px;
+}
 hr {
     margin: 0 auto;
     height: 3px;
     width: 79px;
     background-color: rgb(203, 151, 77);
-    margin-top: 39px;
     border-radius: 12px;
     cursor: pointer;
 }
