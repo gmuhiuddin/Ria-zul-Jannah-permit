@@ -14,7 +14,7 @@
     justify-content: center;
 }
 .permit-container{
-    padding: 39px;
+    background-color: aqua;
 }
 hr {
     margin: 0 auto;
@@ -23,6 +23,7 @@ hr {
     background-color: rgb(203, 151, 77);
     border-radius: 12px;
     cursor: pointer;
+    margin-top: 27px;
 }
 
 #barcode {
@@ -42,15 +43,20 @@ hr {
     color: rgb(203, 151, 77);
 }
 
+#permit-details-txt{
+    margin-left: 33px;
+}
+
 #issued-by-txt {
-    margin-left: 41px;
+    margin-left: 59px;
     font-size: 19px;
 }
 
 #man-icon {
     height: 37px;
     width: 39px;
-    margin-bottom: 17px;
+    margin-bottom: 15px;
+    margin-left: 27px;
 }
 
 #Name-img-txt {
@@ -59,11 +65,11 @@ hr {
 }
 
 #allowe-to-masjid-txt {
-    margin-left: 12px;
+    margin-left: 31px;
 }
 
 #day-txt {
-    margin-left: 41px;
+    margin-left: 67px;
     font-size: 17px;
 }
 
@@ -76,6 +82,7 @@ hr {
     font-size: 31px;
     margin-bottom: 9px;
     margin-right: 11px;
+    margin-left: 29px;
     color: rgb(203, 151, 77);
 }
 
@@ -88,7 +95,7 @@ hr {
 }
 
 #time-txt {
-    margin-left: 41px;
+    margin-left: 51px;
     font-size: 17px;
 }
 
@@ -96,6 +103,7 @@ hr {
     font-size: 31px;
     margin-bottom: 9px;
     margin-right: 11px;
+    margin-left: 11px;
     color: rgb(203, 151, 77);
 }
 
@@ -106,12 +114,12 @@ hr {
 
 #islamic-date-txt {
     margin-top: 17px;
-    margin-left: 35px;
+    margin-left: 59px;
 }
 
 #exit-btn {
     color: rgb(203, 151, 77);
     font-size: 19px;
     cursor: pointer;
-    margin-left: 349px;
+    margin-left: 339px;
 }
