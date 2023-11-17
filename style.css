@@ -9,6 +9,10 @@
     padding: 0px;
 }
 
+.permit-container{
+    width: 399px;
+}
+
 .container {
     display: flex;
     justify-content: center;
@@ -25,7 +29,8 @@ hr {
 }
 
 #barcode {
-    margin: 15px 119px;
+    display: block;
+    margin: 19px auto;
     height: 149px;
     width: 159px;
     border: 5px solid rgb(203, 151, 77);
@@ -119,5 +124,5 @@ hr {
     color: rgb(203, 151, 77);
     font-size: 19px;
     cursor: pointer;
-    margin-left: 339px;
+    margin-left: 309px;
 }
