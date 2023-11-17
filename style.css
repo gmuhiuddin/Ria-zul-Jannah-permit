@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @font-face {
     font-family: poppins;
     src: url(Poppins-Medium.ttf);
@@ -7,6 +8,139 @@
     font-family: poppins;
     margin: 0px;
     padding: 0px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.permit-container{
+width: 429px;
+padding: 12px;
+}
+
+hr {
+    margin: 0 auto;
+    height: 3px;
+    width: 79px;
+    background-color: rgb(203, 151, 77);
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 27px;
+}
+
+#barcode {
+    display: block;
+    margin: 15px auto;
+    height: 149px;
+    width: 159px;
+    border: 5px solid rgb(203, 151, 77);
+}
+
+#name {
+    margin: 31px 0px;
+    text-align: center;
+}
+
+#txt {
+    text-align: center;
+    color: rgb(203, 151, 77);
+}
+
+#permit-details-txt {
+    margin-left: 19px;
+}
+
+#issued-by-txt {
+    margin-left: 61px;
+    font-size: 19px;
+}
+
+#man-icon {
+    height: 37px;
+    width: 39px;
+    margin-bottom: 13px;
+    margin-left: 21px;
+}
+
+#Name-img-txt {
+    display: flex;
+    align-items: center;
+}
+
+#allowe-to-masjid-txt {
+    margin-left: 31px;
+}
+
+#day-txt {
+    margin-left: 67px;
+    font-size: 17px;
+}
+
+#date-img-txt {
+    display: flex;
+    align-items: center;
+}
+
+#date-icon {
+    font-size: 31px;
+    margin-bottom: 9px;
+    margin-right: 11px;
+    margin-left: 37px;
+    color: rgb(203, 151, 77);
+}
+
+.day-date-container {
+    display: flex;
+}
+
+.time-container {
+    margin-left: 49px;
+}
+
+#time-txt {
+    margin-left: 51px;
+    font-size: 17px;
+}
+
+#time-icon {
+    font-size: 31px;
+    margin-bottom: 9px;
+    margin-right: 11px;
+    margin-left: 11px;
+    color: rgb(203, 151, 77);
+}
+
+#time-img-txt {
+    display: flex;
+    align-items: center;
+}
+
+#islamic-date-txt {
+    margin-top: 17px;
+    margin-left: 59px;
+}
+
+#exit-btn {
+    color: rgb(203, 151, 77);
+    font-size: 19px;
+    cursor: pointer;
+    margin-left: 339px;
+=======
+@font-face {
+    font-family: poppins;
+    src: url(Poppins-Medium.ttf);
+}
+
+* {
+    font-family: poppins;
+    margin: 0px;
+    padding: 0px;
+}
+
+.permit-container{
+    width: 399px;
 }
 
 .container {
@@ -25,7 +159,8 @@ hr {
 }
 
 #barcode {
-    margin: 15px 119px;
+    display: block;
+    margin: 19px auto;
     height: 149px;
     width: 159px;
     border: 5px solid rgb(203, 151, 77);
@@ -119,5 +254,6 @@ hr {
     color: rgb(203, 151, 77);
     font-size: 19px;
     cursor: pointer;
-    margin-left: 339px;
+    margin-left: 309px;
+>>>>>>> 52461d78776c2fbcbe58cedfc3a06846a05705c6
 }
