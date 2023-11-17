@@ -15,8 +15,8 @@
 }
 
 .permit-container{
-    width: 491px;
-    background-color: aqua;
+    width: 461px;
+    padding-bottom: 19px;
 }
 
 hr {
@@ -126,5 +126,5 @@ hr {
     color: rgb(203, 151, 77);
     font-size: 19px;
     cursor: pointer;
-    margin-left: 369px;
+    margin-left: 349px;
 }
