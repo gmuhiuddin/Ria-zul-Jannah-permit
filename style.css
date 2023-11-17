@@ -14,10 +14,10 @@
     justify-content: center;
 }
 
-/* .permit-container{
-    width: 469px;
-    background-color: aqua;
-} */
+.permit-container{
+    width: 471px;
+    /* background-color: aqua; */
+}
 
 hr {
     display: block;
