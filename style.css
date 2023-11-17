@@ -14,10 +14,10 @@
     justify-content: center;
 }
 
-.permit-container{
-    width: 461px;
-    padding-bottom: 19px;
-}
+/* .permit-container{
+    width: 469px;
+    background-color: aqua;
+} */
 
 hr {
     display: block;
@@ -49,11 +49,11 @@ hr {
 }
 
 #permit-details-txt {
-    margin-left: 35px;
+    margin-left: 33px;
 }
 
 #issued-by-txt {
-    margin-left: 69px;
+    margin-left: 67px;
     font-size: 19px;
 }
 
@@ -61,7 +61,7 @@ hr {
     height: 37px;
     width: 39px;
     margin-bottom: 13px;
-    margin-left: 29px;
+    margin-left: 27px;
 }
 
 #Name-img-txt {
@@ -70,7 +70,7 @@ hr {
 }
 
 #allowe-to-masjid-txt {
-    margin-left: 39px;
+    margin-left: 35px;
 }
 
 #day-txt {
@@ -87,7 +87,7 @@ hr {
     font-size: 31px;
     margin-bottom: 9px;
     margin-right: 11px;
-    margin-left: 37px;
+    margin-left: 35px;
     color: rgb(203, 151, 77);
 }
 
@@ -126,5 +126,5 @@ hr {
     color: rgb(203, 151, 77);
     font-size: 19px;
     cursor: pointer;
-    margin-left: 337px;
+    margin-left: 327px;
 }
