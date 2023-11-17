@@ -10,8 +10,7 @@
 }
 
 .permit-container{
-    width: 421px;
-    padding: 15px;
+    width: 449px;
 }
 
 .container {
@@ -48,11 +47,11 @@ hr {
 }
 
 #permit-details-txt {
-    margin-left: 43px;
+    margin-left: 21px;
 }
 
 #issued-by-txt {
-    margin-left: 65px;
+    margin-left: 55px;
     font-size: 19px;
 }
 
@@ -60,7 +59,7 @@ hr {
     height: 37px;
     width: 39px;
     margin-bottom: 13px;
-    margin-left: 33px;
+    margin-left: 17px;
 }
 
 #Name-img-txt {
@@ -69,7 +68,7 @@ hr {
 }
 
 #allowe-to-masjid-txt {
-    margin-left: 37px;
+    margin-left: 29px;
 }
 
 #day-txt {
@@ -125,5 +124,5 @@ hr {
     color: rgb(203, 151, 77);
     font-size: 19px;
     cursor: pointer;
-    margin-left: 309px;
+    margin-left: 369px;
 }
