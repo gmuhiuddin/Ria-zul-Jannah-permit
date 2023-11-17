@@ -91,7 +91,7 @@ hr {
 }
 
 .time-container {
-    margin-left: 41px;
+    margin-left: 73px;
 }
 
 #time-txt {
@@ -122,4 +122,8 @@ hr {
     font-size: 19px;
     cursor: pointer;
     margin-left: 307px;
+    background-color: aqua;
+    width: 99px;
+    display: inline-block;
+    text-align: center;
 }
