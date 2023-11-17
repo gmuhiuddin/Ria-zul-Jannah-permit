@@ -122,8 +122,7 @@ hr {
     font-size: 19px;
     cursor: pointer;
     margin-left: 307px;
-    background-color: aqua;
-    width: 99px;
+    width: 89px;
     display: inline-block;
-    text-align: center;
+    text-align: start;
 }
