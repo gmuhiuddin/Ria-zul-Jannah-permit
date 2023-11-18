@@ -129,7 +129,6 @@ hr {
 
 .form-container {
     width: 369px;
-    background-color: aqua;
 }
 
 .Riazul-Jannah-permit-form-txt {
@@ -144,7 +143,6 @@ hr {
     margin-top: 9px;
     margin-left: 25px;
     outline: none;
-    border: none;
     height: 31px;
     width: 259px;
     border-radius: 15px;
@@ -166,8 +164,7 @@ hr {
     width: 171px;
     margin-top: 15px;
     margin-left: 29px;
-    border-radius: 15px;
-    border: none;
+    border-radius: 21px;
     padding: 3px;
 }
 
@@ -176,5 +173,19 @@ hr {
     margin-bottom: 12px;
 }
 .user-timings{
-    margin: 11px 2.5px;
+    margin-top: 19px;
+margin-left: 43px;
+}
+
+#submitBtn{
+    height: 35px;
+    width: 99px;
+    border-radius: 12px;
+    border: none;
+    background-color: rgb(203, 151, 77);
+    color: white;
+    cursor: pointer;
+    margin-top: 29px;
+    margin-left: 239px;
+    margin-bottom: 19px;
 }
