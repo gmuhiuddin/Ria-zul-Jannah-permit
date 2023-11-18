@@ -12,6 +12,8 @@ let names = document.getElementsByClassName('name');
 let enDate = document.getElementById('en-date');
 let islamicDate = document.getElementById('islamic-date-txt');
 let time = document.getElementById('time');
+let menWomenTxt = document.getElementById('men-women-txt');
+let exitBtn = document.getElementById('exit-btn');
 
 
 setInterval(() => {
@@ -27,16 +29,17 @@ womenTimingContainer.style.display = 'none';
 permitContainer[0].style.display = 'none';
 
 
-for(let i = 0; i < userGender.length; i++){
-userGender[i].addEventListener('click' , function () {
-    if(this.value == 'men'){
-        menTimingContainer.style.display = 'block'
-        womenTimingContainer.style.display = 'none'
-    }else{
-        menTimingContainer.style.display = 'none'
-        womenTimingContainer.style.display = 'block'
-    }
-})
+for (let i = 0; i < userGender.length; i++) {
+    userGender[i].addEventListener('click', function () {
+        menWomenTxt.innerText = this.value;
+        if (this.value == 'Men') {
+            menTimingContainer.style.display = 'block'
+            womenTimingContainer.style.display = 'none'
+        } else {
+            menTimingContainer.style.display = 'none'
+            womenTimingContainer.style.display = 'block'
+        }
+    })
 }
 
 
@@ -46,27 +49,33 @@ permitForm.addEventListener('submit', function (a) {
     permitContainer[0].style.display = 'block';
 
     for (let index = 0; index < names.length; index++) {
-        names[index].innerText = userName.value;
+        names[index].innerText = userName.value.toUpperCase();
     }
-
+    
     let date = new Date(userDate.value)
-    console.log(date) 
+    
+    const fullMonth = date.toLocaleString('en-US', { month: 'long' });
+    enDate.innerText = date.getDate() + " " + fullMonth.slice(0, 3) + " " + date.getFullYear();
 
-for(let i =0;i < usertimings.length;i++){
-    usertimings[i].addEventListener('change',function () {
-        
-    this.value
-    })
-} 
+    fetch(
+          `https://api.aladhan.com/v1/gToH/${date.getDate()}-${date.getMonth()+1}-${date.getFullYear()}?`
+        )
+          .then(response => response.json())
+          .then(data => {
+                console.log(data.data.hijri)
+            islamicDate.innerText = data.data.hijri.day+" "+data.data.hijri.month.en+","+data.data.hijri.year;
+          }
+          ).catch(error => alert(error))
 
 })
 
+for (let i = 0; i < usertimings.length; i++) {
+    usertimings[i].addEventListener('change', function () {
+        console.log(this.value)
+        time.innerText = this.value;
+    })
+}
 
-
-
-    //         fetch(
-    //   `https://api.aladhan.com/v1/gToH/${today.getDate()}-${today.getMonth()+1}-${today.getFullYear()}?`
-    // )
-    //   .then(response => response.json())
-    //   .then(data => console.log(data)).catch(error => alert(error))
-
+exitBtn.addEventListener('click', function () {
+    window.location.reload()
+})
