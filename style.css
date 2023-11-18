@@ -69,7 +69,7 @@ hr {
 }
 
 #day-txt {
-    margin-left:63px;
+    margin-left: 63px;
     font-size: 17px;
 }
 
@@ -125,4 +125,56 @@ hr {
     width: 89px;
     display: inline-block;
     text-align: center;
+}
+
+.form-container {
+    width: 369px;
+    background-color: aqua;
+}
+
+.Riazul-Jannah-permit-form-txt {
+    font-size: 21px;
+    display: block; 
+    text-align: center;
+    color: rgb(203, 151, 77);
+    margin-top: 19px;
+}
+
+#user-name{
+    margin-top: 9px;
+    margin-left: 25px;
+    outline: none;
+    border: none;
+    height: 31px;
+    width: 259px;
+    border-radius: 15px;
+    padding-left: 3px;
+}
+.label{
+   margin-left: 21px; 
+}
+.gender-txt{
+    font-size: 17px;
+    margin-left: 21px;
+}
+.user-gender{
+    margin-top: 19px;
+    margin-left: 23px;
+}
+#user-date{
+    height: 33px;
+    width: 171px;
+    margin-top: 15px;
+    margin-left: 29px;
+    border-radius: 15px;
+    border: none;
+    padding: 3px;
+}
+
+.timing-txt{
+    margin-left: 25px;
+    margin-bottom: 12px;
+}
+.user-timings{
+    margin: 11px 2.5px;
 }

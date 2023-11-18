@@ -13,6 +13,111 @@
 
 <body>
     <div class="container">
+        <div class="form-container">
+            <span class="Riazul-Jannah-permit-form-txt">Riazul Jannah permit form</span>
+            <form id="permit-form">
+                <br>
+                <label class="label" for="user-name">Name</label>
+                <br>
+                <input required type="text" placeholder="Name" id="user-name" />
+                <br>
+                <br>
+                <p class="gender-txt">Gender</p>
+                <input required type="radio" checked name="gender" value="men" class="user-gender" />
+                <label for="user-gender">Men</label>
+                <input required type="radio" name="gender" value="women" class="user-gender" />
+                <label for="user-gender">Women</label>
+                <br />
+                <br />
+                <label class="label" for="user-name">Date</label>
+                <br>
+                <input required type="date" id="user-date" />
+                <br>
+                <br>
+                <p class="timing-txt">Timings</p>
+                <div id="men-timing-container">
+                    <input required type="radio" name="men-timings" value="11:00-11:29" id="11:00-11:29" class="user-timings" />
+                    <label for="11:00-11:29">11:00-11:29</label>
+                    <input required type="radio" name="men-timings" value="11:30-11:59" id="11:30-11:59" class="user-timings" />
+                    <label for="11:30-11:59">11:30-11:59</label>
+                    <input required type="radio" name="men-timings" value="14:00-14:29" id="14:00-14:29" class="user-timings" />
+                    <label for="14:00-14:29">14:00-14:29</label>
+                    <br>
+                    <input required type="radio" name="men-timings" value="14:30-14:59" id="14:30-14:59" class="user-timings" />
+                    <label for="14:30-14:59">14:30-14:59</label>
+                    <input required type="radio" name="men-timings" value="15:00-15:29" id="15:00-15:29"class="user-timings" />
+                    <label for="15:00-15:29">15:00-15:29</label>
+                    <input required type="radio" name="men-timings" value="15:30-15:59" id="15:30-15:59" class="user-timings" />
+                    <label for="15:30-15:59">15:30-15:59</label>
+                    <br>
+                    <input required type="radio" name="men-timings" value="16:00-16:29" id="16:00-16:29" class="user-timings" />
+                    <label for="16:00-16:29">16:00-16:29</label>
+                    <input required type="radio" name="men-timings" value="16:30-16:59" id="16:30-16:59"class="user-timings" />
+                    <label for="16:30-16:59">16:30-16:59</label>
+                    <input required type="radio" name="men-timings" value="17:00-17:29" id="17:00-17:29" class="user-timings" />
+                    <label for="17:00-17:29">17:00-17:29</label>
+                    <br>
+                    <input required type="radio" name="men-timings" value="18:00-18:29" id="18:00-18:29" class="user-timings" />
+                    <label for="18:00-18:29">18:00-18:29</label>
+                    <input required type="radio" name="men-timings" value="18:30-18:59" id="18:30-18:59" class="user-timings" />
+                    <label for="18:30-18:59">18:30-18:59</label>
+                    <input required type="radio" name="men-timings" value="00:00-00:29" id="00:00-00:29"class="user-timings" />
+                    <label for="00:00-00:29">00:00-00:29</label>
+                    <br>
+                    <input required type="radio" name="men-timings" value="00:30-00:59" id="00:30-00:59" class="user-timings" />
+                    <label for="00:30-00:59">00:30-00:59</label>
+                    <input required type="radio" name="men-timings" value="01:00-01:29" id="01:00-01:29" class="user-timings" />
+                    <label for="01:00-01:29">01:00-01:29</label>
+                    <input required type="radio" name="men-timings" value="01:30-01:59" id="01:30-01:59" class="user-timings" />
+                    <label for="01:30-01:59">01:30-01:59</label>
+                    <br>
+                    <input required type="radio" name="men-timings" value="02:00-02:29" id="02:00-02:29" class="user-timings" />
+                    <label for="02:00-02:29">02:00-02:29</label>
+                    <input required type="radio" name="men-timings" value="02:30-02:59" id="02:30-02:59" class="user-timings" />
+                    <label for="02:30-02:59">02:30-02:59</label>
+                    <input required type="radio" name="men-timings" value="03:00-03:29" id="03:00-03:29" class="user-timings" />
+                    <label for="03:00-03:29">03:00-03:29</label>
+                    <br>
+                    <input required type="radio" name="men-timings" value="03:30-03:59" id="03:30-03:59" class="user-timings" />
+                    <label for="03:30-03:59">03:30-03:59</label>
+                    <input required type="radio" name="men-timings" value="04:00-04:29" id="04:00-04:29" class="user-timings" />
+                    <label for="04:00-04:29">04:00-04:29</label>
+                    <input required type="radio" name="men-timings" value="04:30-04:59" id="04:30-04:59" class="user-timings" />
+                    <label for="04:30-04:59">04:30-04:59</label>
+                </div>
+<br>
+<br>
+<br>
+                <div id="women-timing-container">
+                    <input required type="radio" name="women-timings" value="men" class="user-timings" />
+                    <label for="user-timings">Men</label>
+                    <input required type="radio" name="women-timings" value="women" class="user-timings" />
+                    <label for="user-timings">Women</label><input required type="radio" name="gender" value="men"
+                        class="user-timings" />
+                    <label for="user-timings">Men</label>
+                    <input required type="radio" name="women-timings" value="women" class="user-timings" />
+                    <label for="user-timings">Women</label>
+                    <br>
+                    <input required type="radio" name="women-timings" value="men" class="user-timings" />
+                    <label for="user-timings">Men</label>
+                    <input required type="radio" name="women-timings" value="women" class="user-timings" />
+                    <label for="user-timings">Women</label><input required type="radio" name="gender" value="men"
+                        class="user-timings" />
+                    <label for="user-timings">Men</label>
+                    <input required type="radio" name="women-timings" value="women" class="user-timings" />
+                    <label for="user-timings">Women</label>
+                    <br>
+                    <input required type="radio" name="women-timings" value="men" class="user-timings" />
+                    <label for="user-timings">Men</label>
+                    <input required type="radio" name="women-timings" value="women" class="user-timings" />
+                    <label for="user-timings">Women</label><input required type="radio" name="gender" value="men"
+                        class="user-timings" />
+                    <label for="user-timings">Men</label>
+                    <input required type="radio" name="women-timings" value="women" class="user-timings" />
+                    <label for="user-timings">Women</label>
+                </div>
+            </form>
+        </div>
         <div class="permit-container">
             <hr>
             <br>
@@ -56,7 +161,7 @@
                     <span id="time-txt">Time</span>
                     <p id="time-img-txt">
                         <i id="time-icon" class="fa-regular fa-clock"></i>
-                        00:30-00:59 
+                        00:30-00:59
                     </p>
                 </div>
             </div>
