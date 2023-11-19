@@ -15,6 +15,7 @@ let time = document.getElementById('time');
 let menWomenTxt = document.getElementById('men-women-txt');
 let exitBtn = document.getElementById('exit-btn');
 
+let islamicMonths = ['Muharram','Safar','Rabi’ al-Awwal','Rabi’ al-Thani','Jumada al-Ula',' Jumada al-Akhirah','Rajab','Sha’ban','Ramadan','Shawwal','Dhu al-Qa’dah','Dhi al-Hijjah',]
 
 setInterval(() => {
     barcode.style.border = '5px solid transparent';
@@ -61,9 +62,10 @@ permitForm.addEventListener('submit', function (a) {
           `https://api.aladhan.com/v1/gToH/${date.getDate()}-${date.getMonth()+1}-${date.getFullYear()}?`
         )
           .then(response => response.json())
-          .then(data => {
-                console.log(data.data.hijri)
-            islamicDate.innerText = data.data.hijri.day+" "+data.data.hijri.month.en+","+data.data.hijri.year;
+          .then(datas => {
+            let {data} = datas
+            let {hijri} = data
+            islamicDate.innerText = hijri.day+" "+islamicMonths[hijri.month.number-1]+","+hijri.year;
           }
           ).catch(error => alert(error))
 
@@ -71,7 +73,6 @@ permitForm.addEventListener('submit', function (a) {
 
 for (let i = 0; i < usertimings.length; i++) {
     usertimings[i].addEventListener('change', function () {
-        console.log(this.value)
         time.innerText = this.value;
     })
 }
