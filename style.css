@@ -133,13 +133,13 @@ hr {
 
 .Riazul-Jannah-permit-form-txt {
     font-size: 21px;
-    display: block; 
+    display: block;
     text-align: center;
     color: rgb(203, 151, 77);
     margin-top: 19px;
 }
 
-#user-name{
+#user-name {
     margin-top: 9px;
     margin-left: 25px;
     outline: none;
@@ -148,18 +148,22 @@ hr {
     border-radius: 15px;
     padding-left: 3px;
 }
-.label{
-   margin-left: 21px; 
+
+.label {
+    margin-left: 21px;
 }
-.gender-txt{
+
+.gender-txt {
     font-size: 17px;
     margin-left: 21px;
 }
-.user-gender{
+
+.user-gender {
     margin-top: 19px;
     margin-left: 23px;
 }
-#user-date{
+
+#user-date {
     height: 33px;
     width: 171px;
     margin-top: 15px;
@@ -168,16 +172,17 @@ hr {
     padding: 3px;
 }
 
-.timing-txt{
+.timing-txt {
     margin-left: 25px;
     margin-bottom: 12px;
 }
-.user-timings{
+
+.user-timings {
     margin-top: 19px;
-margin-left: 43px;
+    margin-left: 43px;
 }
 
-#submitBtn{
+#submitBtn {
     height: 35px;
     width: 99px;
     border-radius: 12px;

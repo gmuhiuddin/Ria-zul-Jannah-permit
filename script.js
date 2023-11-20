@@ -14,8 +14,10 @@ let islamicDate = document.getElementById('islamic-date-txt');
 let time = document.getElementById('time');
 let menWomenTxt = document.getElementById('men-women-txt');
 let exitBtn = document.getElementById('exit-btn');
+let regisNum = document.getElementById('regisNum');
+let permitNum = document.getElementById('permitNum');
 
-let islamicMonths = ['Muharram','Safar','Rabi’ al-Awwal','Rabi’ al-Thani','Jumada al-Ula',' Jumada al-Akhirah','Rajab','Sha’ban','Ramadan','Shawwal','Dhu al-Qa’dah','Dhi al-Hijjah',]
+let islamicMonths = ['Muharram', 'Safar', 'Rabi’ al-Awwal', 'Rabi’ al-Thani', 'Jumada al-Ula', ' Jumada al-Akhirah', 'Rajab', 'Sha’ban', 'Ramadan', 'Shawwal', 'Dhu al-Qa’dah', 'Dhi al-Hijjah',]
 
 setInterval(() => {
     barcode.style.border = '5px solid transparent';
@@ -40,6 +42,9 @@ for (let i = 0; i < userGender.length; i++) {
             menTimingContainer.style.display = 'none'
             womenTimingContainer.style.display = 'block'
         }
+        for (let i = 0; i < usertimings.length; i++) {
+            usertimings[i].checked = false
+        }
     })
 }
 
@@ -52,22 +57,28 @@ permitForm.addEventListener('submit', function (a) {
     for (let index = 0; index < names.length; index++) {
         names[index].innerText = userName.value.toUpperCase();
     }
-    
+
+    let ranNum = Math.random()
+    let ranNum1 = Math.random()
+
+    regisNum.innerText = Math.ceil(ranNum * 1000000000)
+    permitNum.innerText = Math.ceil(ranNum1 * 10000000000)
+
     let date = new Date(userDate.value)
-    
+
     const fullMonth = date.toLocaleString('en-US', { month: 'long' });
     enDate.innerText = date.getDate() + " " + fullMonth.slice(0, 3) + " " + date.getFullYear();
 
     fetch(
-          `https://api.aladhan.com/v1/gToH/${date.getDate()}-${date.getMonth()+1}-${date.getFullYear()}?`
-        )
-          .then(response => response.json())
-          .then(datas => {
-            let {data} = datas
-            let {hijri} = data
-            islamicDate.innerText = hijri.day+" "+islamicMonths[hijri.month.number-1]+","+hijri.year;
-          }
-          ).catch(error => alert(error))
+        `https://api.aladhan.com/v1/gToH/${date.getDate()}-${date.getMonth() + 1}-${date.getFullYear()}?`
+    )
+        .then(response => response.json())
+        .then(datas => {
+            let { data } = datas
+            let { hijri } = data
+            islamicDate.innerText = hijri.day + " " + islamicMonths[hijri.month.number - 1] + "," + hijri.year;
+        }
+        ).catch(error => alert(error))
 
 })
 
