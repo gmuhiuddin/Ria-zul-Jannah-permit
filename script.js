@@ -61,8 +61,8 @@ permitForm.addEventListener('submit', function (a) {
     let ranNum = Math.random()
     let ranNum1 = Math.random()
 
-    regisNum.innerText = Math.ceil(ranNum * 1000000000)
-    permitNum.innerText = Math.ceil(ranNum1 * 10000000000)
+    regisNum.innerText = Math.floor(ranNum * 100000000)
+    permitNum.innerText = Math.floor(ranNum1 * 1000000000)
 
     let date = new Date(userDate.value)
 
