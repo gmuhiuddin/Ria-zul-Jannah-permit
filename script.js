@@ -74,8 +74,9 @@ permitForm.addEventListener('submit', function (a) {
     )
         .then(response => response.json())
         .then(datas => {
-            let { data } = datas
-            let { hijri } = data
+            console.log(datas);
+            let { data } = datas;
+            let { hijri } = data;
             islamicDate.innerText = hijri.day + " " + islamicMonths[hijri.month.number - 1] + "," + hijri.year;
         }
         ).catch(error => alert(error))
