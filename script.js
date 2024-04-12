@@ -17,15 +17,15 @@ let exitBtn = document.getElementById('exit-btn');
 let regisNum = document.getElementById('regisNum');
 let permitNum = document.getElementById('permitNum');
 
-let islamicMonths = ['Muharram', 'Safar', 'Rabi’ al-Awwal', 'Rabi’ al-Thani', 'Jumada al-Ula', ' Jumada al-Akhirah', 'Rajab', 'Sha’ban', 'Ramadan', 'Shawwal', 'Dhu al-Qa’dah', 'Dhi al-Hijjah',]
+let islamicMonths = ['Muharram', 'Safar', 'Rabi’ al-Awwal', 'Rabi’ al-Thani', 'Jumada al-Ula', ' Jumada al-Akhirah', 'Rajab', 'Sha’ban', 'Ramadan', 'Shawwal', 'Dhu al-Qa’dah', 'Dhi al-Hijjah',];
 
 setInterval(() => {
     barcode.style.border = '5px solid transparent';
-}, 700)
+}, 700);
 
 setInterval(() => {
     barcode.style.border = '5px solid rgb(203, 151, 77)';
-}, 1400)
+}, 1400);
 
 menTimingContainer.style.display = 'block';
 womenTimingContainer.style.display = 'none';
@@ -46,8 +46,7 @@ for (let i = 0; i < userGender.length; i++) {
             usertimings[i].checked = false
         }
     })
-}
-
+};
 
 permitForm.addEventListener('submit', function (a) {
     a.preventDefault()
@@ -81,14 +80,14 @@ permitForm.addEventListener('submit', function (a) {
         }
         ).catch(error => alert(error))
 
-})
+});
 
 for (let i = 0; i < usertimings.length; i++) {
     usertimings[i].addEventListener('change', function () {
         time.innerText = this.value;
     })
-}
+};
 
 exitBtn.addEventListener('click', function () {
     window.location.reload()
-})
+});
